@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Do Math</title>
+	<script type="text/javascript">
+		function doMath (num1, num2, operator){
+			var result;
+			if(operator == '+'){
+				result = num1+num2;
+			}else if(operator == '-'){
+				result = num1 - num2;
+			}else if(operator == '*' || operator == 'x' || operator == 'X'){
+				result = num1*num2;
+			}else if(operator == '/'){
+				result = num1/num2;
+			}
+			return result;
+		}
+		
+		var mathFunction = doMath(60,10,'*');
+		document.write('result: ',mathFunction);
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
