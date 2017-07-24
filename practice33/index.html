@@ -1,0 +1,10 @@
+function invert_negatives(number){
+  if(number > 0){
+    return -Math.abs(number);
+  }else if(number < 0){
+    return number;
+  }else if(isNaN(number)){
+    return false;
+  }
+}
+console.log(invert_negatives(-1000))
